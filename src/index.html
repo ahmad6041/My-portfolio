@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Ahmad Aleem Navbar Example</title>
+    <!-- Tailwind CSS link — Replace with your compiled CSS file if using CLI -->
+    <link href="output.css" rel="stylesheet">
+    <!-- Optional: Include Google Fonts for logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+    <body>
+      <!-- Navbar Container -->
+<nav class="bg-neutral-900 px-8 py-4 flex items-center justify-between">
+  <!-- Logo Image (replace 'logo.png' with your file name) -->
+  <div>
+    <img src="assets/images/logo.png" alt="Ahmad Logo" class="h-14 w-auto" />
+  </div>
+  
+  <!-- Navigation Links -->
+  <ul class="flex space-x-8 items-center">
+    <li><a href="#Home" class="text-white text-xl hover:text-yellow-500 transition">Home</a></li>
+    <li><a href="#About" class="text-white text-xl hover:text-yellow-500 transition">About</a></li>
+    <li><a href="#F.A.Q" class="text-white text-xl hover:text-yellow-500 transition">F.A.Q</a></li>
+    <li><a href="#Contact" class="text-white text-xl hover:text-yellow-500 transition">Contact</a></li>
+    <!-- Search Icon (SVG) -->
+    <li>
+      <button class="text-white ml-4">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</nav>
+    <!-- hero section -->
+     <div class="relative w-full h-[600px] bg-white overflow-hidden">
+  <!-- Background Image -->
+  <img src="assets/images/banoqabil portfolio.jpg" alt="Profile" class="absolute inset-0 w-full h-full object-cover opacity-90" />
+  
+  <!-- Overlay (optional for better readability) -->
+  <!-- <div class="absolute inset-0 bg-white bg-opacity-40"></div> -->
+  
+  <!-- Content Container -->
+  <div class="relative flex w-full h-full items-center justify-between px-16">
+    <!-- Designer Section -->
+    <div class="max-w-xs pl-4">
+      <h1 class="text-5xl font-light text-gray-400 mb-4">Designer</h1>
+      <p class="text-xl text-gray-500">Product designer specialising in UI design and design systems.</p>
+    </div>
+    <!-- Coder Section -->
+    <div class="max-w-xs text-right pr-4">
+      <h1 class="text-5xl font-light text-gray-400 mb-4">&lt;coder&gt;</h1>
+      <p class="text-xl text-gray-500">Front end developer who writes clean, elegant and efficient code.</p>
+    </div>
+  </div>
+</div>
+<!-- about section -->
+ <div class="min-h-screen bg-neutral-900 flex items-center justify-center px-2" id="About">
+  <div class="flex items-center gap-14 px-8 py-20">
+    <!-- Circular Image -->
+    <img src="assets/images/my profile.png" alt="Profile" class="w-80 h-80 rounded-full object-cover border-0 shadow-lg" />
+    
+    <!-- Text Content -->
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-medium text-orange-400 mb-8">
+        More about me
+      </h2>
+      <p class="mb-6 text-2xl text-gray-400 font-normal">
+        I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
+      </p>
+      <p class="text-2xl text-gray-400 font-normal">
+        My journey in this dynamic field has been a testament to my passion for crafting meaningful user experiences, leveraging technologies, and fearlessly pushing the boundaries of digital creativity. I thrive on transforming ideas into intuitive and impactful designs.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- f.a.q -->
+ <div class="min-h-screen bg-neutral-900 flex items-center justify-center px-3" id="F.A.Q">
+  <div class="w-full max-w-2xl mx-auto flex flex-col items-center">
+    <!-- Heading -->
+    <h2 class="text-5xl font-semibold text-orange-400 text-center mb-8">
+      Have a questions?
+    </h2>
+    <!-- Subheading -->
+    <p class="text-gray-400 text-center text-lg mb-12 max-w-xl">
+      I've gathered common questions and their answers to make your experience smoother. If you can't find what you're looking for, feel free to reach out to me.
+    </p>
+    <!-- FAQ Items -->
+    <div class="w-full flex flex-col gap-4">
+      <div class="flex items-center border-b border-gray-500 pb-2">
+        <span class="flex-1 text-xl text-gray-400">Do you charge hourly or on spec?</span>
+        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
+      </div>
+      <div class="flex items-center border-b border-gray-500 pb-2">
+        <span class="flex-1 text-xl text-gray-400">How long have you been doing design?</span>
+        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
+      </div>
+      <div class="flex items-center border-b border-gray-500 pb-2">
+        <span class="flex-1 text-xl text-gray-400">What is the process and how long does it take?</span>
+        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact -->
+ <div class="min-h-screen bg-neutral-900 flex items-center px-10" id="Contact">
+  <!-- Left side: Contact info -->
+  <div class="w-1/2 pr-10">
+    <div class="flex items-center gap-2 mb-5">
+      <div class="w-2 h-2 bg-orange-400 rounded mr-2"></div>
+      <span class="text-gray-300 text-lg">Contact Us</span>
+    </div>
+    <h2 class="text-4xl font-normal text-gray-300 mb-2">
+      Let's Talk for <span class="text-orange-400 font-medium">your</span>
+    </h2>
+    <h2 class="text-4xl font-normal text-orange-400 mb-8">Next Project</h2>
+    <!-- Contact Items -->
+    <div class="flex flex-col gap-6">
+      <div class="flex items-center gap-5">
+        <img src="assets/images/phone-call.png" alt="Phone" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
+        <span class="text-gray-300 text-lg">+923036968093</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <img src="assets/images/email.png" alt="Email" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
+        <span class="text-gray-300 text-lg">engrmahmadaleem@gmail.com</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <img src="assets/images/location-pin.png" alt="Location" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
+        <span class="text-gray-300 text-lg">College chowk, Fareed Town, Sahiwal</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
+        <span class="text-gray-300 text-lg">+923036968093</span>
+      </div>
+    </div>
+  </div>
+  <!-- Right side: Form -->
+  <div class="w-1/2 pl-10">
+    <form class="flex flex-col gap-4">
+      <div class="flex gap-4">
+        <div class="flex flex-col w-1/2">
+          <label class="text-gray-400 mb-1">Your Name</label>
+          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
+        </div>
+        <div class="flex flex-col w-1/2">
+          <label class="text-gray-400 mb-1">Email</label>
+          <input type="email" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <div class="flex flex-col w-1/2">
+          <label class="text-gray-400 mb-1">Phone Number</label>
+          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
+        </div>
+        <div class="flex flex-col w-1/2">
+          <label class="text-gray-400 mb-1">Country</label>
+          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
+        </div>
+      </div>
+      <div class="flex flex-col mb-3">
+        <label class="text-gray-400 mb-1">Budget Range</label>
+        <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none w-1/2" />
+      </div>
+      <div class="flex flex-col">
+        <label class="text-gray-400 mb-1">Your Message Here</label>
+        <textarea rows="5" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none w-full resize-none"></textarea>
+      </div>
+      <div class="pt-4">
+        <button type="submit" class="bg-orange-400 text-black rounded-full px-8 py-2 text-2xl flex items-center gap-2 font-medium">
+          Submitt
+          <span class="text-3xl">→</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- footer -->
+ <footer class="bg-neutral-900 py-8 px-6">
+  <!-- Top horizontal line -->
+  <div class="border-t-2 border-orange-400 mb-8"></div>
+  <div class="flex flex-row justify-between items-start gap-12">
+    <!-- Left Block: Logo, Text, Navigation -->
+    <div class="flex-1">
+      <!-- Logo image -->
+      <img src="assets/images/logo.png" alt="Ahmad Logo" class="h-16 w-auto mb-4" />
+      <p class="text-2xl text-gray-400 mb-8 max-w-xl">
+        I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
+      </p>
+      <nav class="flex gap-8 text-2xl text-gray-400 mb-1">
+    <a href="#Home" class="hover:text-yellow-500 transition">Home</a>
+    <a href="#About" class="hover:text-yellow-500 transition">About</a>
+    <a href="#F.A.Q" class="hover:text-yellow-500 transition">F.A.Q</a>
+    <a href="#Contact" class="hover:text-yellow-500 transition">Contact</a>
+      </nav>
+    </div>
+    <!-- Vertical Divider -->
+    <div class="border-l-2 border-orange-400 mx-7 h-48"></div>
+    <!-- Right Block: Newsletter -->
+    <div class="flex-1">
+      <h3 class="text-2xl text-gray-400 mb-6">Get the latest information</h3>
+      <form class="flex flex-col gap-4">
+        <div class="flex">
+          <input 
+            type="email" 
+            placeholder="Enter your Email" 
+            class="rounded-xl px-5 py-4 text-xl bg-gray-200/80 text-black outline-none"
+          />
+          <button 
+            type="submit" 
+            class="rounded-xl bg-gray-200/80 ml-3 px-5 py-4 text-xl text-black font-semibold flex items-center gap-2"
+          >
+            <span>&rarr;</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Bottom orange bar -->
+  <div class="bg-neutral-900 mt-8 py-4 px-6 flex flex-row items-center justify-between">
+    <span class="text-white text-lg font-bold">
+      Copyright &copy; 2024 Company Name. All Rights Reserved.
+    </span>
+    <div class="flex gap-8 text-white text-xl font-bold">
+      <a href="#" class="hover:text-yellow-500 transition">Terms &amp; Condition</a>
+      <a href="" class="hover:text-yellow-500 transition">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+</html>
