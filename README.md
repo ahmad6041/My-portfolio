@@ -18,19 +18,3 @@ HTML
 CSS
 Tailwind CSS (CLI Version)
 
-Color Palette and Typography
-Text-color: #849393
-Background color: #222222
-Primary color: White
-Nav hover and heading color: #FF8B00
-heading-1: 64px
-heading-2: 40px
-
-Project Structure
-/assets 
-/images 
-index.html 
-style.css 
-tailwind.config.js 
-README.md
-
