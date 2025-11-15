@@ -2,234 +2,293 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M Ahmad Aleem Navbar Example</title>
-    <!-- Tailwind CSS link — Replace with your compiled CSS file if using CLI -->
-    <link href="output.css" rel="stylesheet">
-    <!-- Optional: Include Google Fonts for logo -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <style>
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Ahmad Aleem Navbar Example</title>
+  <!-- Tailwind CSS link — Replace with your compiled CSS file if using CLI -->
+  <link href="output.css" rel="stylesheet">
+  <!-- Optional: Include Google Fonts for logo -->
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* Figma Styles of your File */
+:root {
+  /* Colors */
+  --primary: #ff8b00;
+  --text: #331c00;
+  --light-background: #fff6eb;
+  --stroke: #d1b492;
+  --secondary-color: #ffdcb3;
+  --sub-text: #9d9285;
+  --white: #ffffff;
+  --black: #000000;
+  --black-2b2b2b: #2b2b2b;
+  --primary: #e4e4e4;
+  --text: #2e2e2e;
+  --light-background: #fdfdfd;
+  --stroke: #cbcbcb;
+  --secondary-color: #f7f7f7;
+  --sub-text: #9b9b9b;
+  --white: #ffffff;
+  --black: #000000;
+  --black-2b2b2b: #2b2b2b;
+
+  /* Fonts */
+  /* Effects */
+}
+/* Figma Color Variables of your File */
+
+  </style>
 </head>
-    <body>
-      <!-- Navbar Container -->
-<nav class="bg-neutral-900 px-8 py-4 flex items-center justify-between">
-  <!-- Logo Image (replace 'logo.png' with your file name) -->
-  <div>
-    <img src="assets/images/logo.png" alt="Ahmad Logo" class="h-14 w-auto" />
-  </div>
-  
-  <!-- Navigation Links -->
-  <ul class="flex space-x-8 items-center">
-    <li><a href="#Home" class="text-white text-xl hover:text-yellow-500 transition">Home</a></li>
-    <li><a href="#About" class="text-white text-xl hover:text-yellow-500 transition">About</a></li>
-    <li><a href="#F.A.Q" class="text-white text-xl hover:text-yellow-500 transition">F.A.Q</a></li>
-    <li><a href="#Contact" class="text-white text-xl hover:text-yellow-500 transition">Contact</a></li>
-    <!-- Search Icon (SVG) -->
-    <li>
-      <button class="text-white ml-4">
-        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </button>
-    </li>
-  </ul>
-</nav>
-    <!-- hero section -->
-     <div class="relative w-full h-[600px] bg-white overflow-hidden">
-  <!-- Background Image -->
-  <img src="assets/images/banoqabil portfolio.jpg" alt="Profile" class="absolute inset-0 w-full h-full object-cover opacity-90" />
-  
-  <!-- Overlay (optional for better readability) -->
-  <!-- <div class="absolute inset-0 bg-white bg-opacity-40"></div> -->
-  
-  <!-- Content Container -->
-  <div class="relative flex w-full h-full items-center justify-between px-16">
-    <!-- Designer Section -->
-    <div class="max-w-xs pl-4">
-      <h1 class="text-5xl font-light text-gray-400 mb-4">Designer</h1>
-      <p class="text-xl text-gray-500">Product designer specialising in UI design and design systems.</p>
+
+<body>
+  <!-- header -->
+  <nav class="flex items-center justify-between bg-teal-700 px-8 py-3">
+    <!-- Logo (left) -->
+    <div class="flex items-center">
+      <p class="text-white">Ahmad</p>
+      <!-- <img src="assets/images/logo.png" alt="Logo" class="h-10 mr-2" /> -->
+      <!-- Or for a text logo: <span class="text-yellow-400 text-2xl font-signature">Ahmad</span> -->
     </div>
-    <!-- Coder Section -->
-    <div class="max-w-xs text-right pr-4">
-      <h1 class="text-5xl font-light text-gray-400 mb-4">&lt;coder&gt;</h1>
-      <p class="text-xl text-gray-500">Front end developer who writes clean, elegant and efficient code.</p>
+    <!-- Navigation (center) -->
+    <ul class="flex space-x-10">
+      <li><a href="#" class="text-white text-lg">Home</a></li>
+      <li><a href="#" class="text-white text-lg">About</a></li>
+      <li><a href="#" class="text-white text-lg">Education</a></li>
+      <li><a href="#" class="text-white text-lg">Contact</a></li>
+    </ul>
+    <!-- Resume Button (right) -->
+    <div>
+      <a href="#"
+        class="px-8 py-2 border-2 border-dashed border-white text-white text-lg rounded transition hover:bg-white hover:text-teal-700">Resume</a>
     </div>
-  </div>
-</div>
-<!-- about section -->
- <div class="min-h-screen bg-neutral-900 flex items-center justify-center px-2" id="About">
-  <div class="flex items-center gap-14 px-8 py-20">
-    <!-- Circular Image -->
-    <img src="assets/images/my profile.png" alt="Profile" class="w-80 h-80 rounded-full object-cover border-0 shadow-lg" />
-    
-    <!-- Text Content -->
-    <div class="max-w-2xl">
-      <h2 class="text-3xl font-medium text-orange-400 mb-8">
-        More about me
-      </h2>
-      <p class="mb-6 text-2xl text-gray-400 font-normal">
-        I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
-      </p>
-      <p class="text-2xl text-gray-400 font-normal">
-        My journey in this dynamic field has been a testament to my passion for crafting meaningful user experiences, leveraging technologies, and fearlessly pushing the boundaries of digital creativity. I thrive on transforming ideas into intuitive and impactful designs.
-      </p>
+  </nav>
+  <!-- heros section -->
+  <div class="relative w-full h-[500px] bg-white flex items-center justify-center overflow-hidden">
+    <!-- Main Image -->
+    <img src="assets/images/banoqabil portfolio.jpg" alt="Profile"
+      class="absolute inset-0 w-full h-full object-cover opacity-80" />
+
+
+
+    <!-- Text content: flex container over image -->
+    <div class="absolute inset-0 flex items-center justify-between px-16">
+      <!-- Designer (left) -->
+      <div class="max-w-md text-left space-y-4">
+        <h2 class="text-5xl font-semibold text-gray-600">Designer</h2>
+        <p class="text-gray-500 text-lg">Product designer specialising in UI design <br>and design systems.</p>
+      </div>
+      <!-- Coder (right) -->
+      <div class="max-w-md text-right space-y-4">
+        <h2 class="text-5xl font-semibold text-gray-600 text-left">&lt;coder&gt;</h2>
+        <p class="text-gray-500 text-lg text-left">Front end developer who writes clean, elegant <br>and efficient code.
+        </p>
+      </div>
     </div>
   </div>
-</div>
-<!-- f.a.q -->
- <div class="min-h-screen bg-neutral-900 flex items-center justify-center px-3" id="F.A.Q">
-  <div class="w-full max-w-2xl mx-auto flex flex-col items-center">
-    <!-- Heading -->
-    <h2 class="text-5xl font-semibold text-orange-400 text-center mb-8">
-      Have a questions?
-    </h2>
-    <!-- Subheading -->
-    <p class="text-gray-400 text-center text-lg mb-12 max-w-xl">
-      I've gathered common questions and their answers to make your experience smoother. If you can't find what you're looking for, feel free to reach out to me.
+  <!-- about -->
+   <div class="flex items-center justify-center min-h-[350px] bg-gray-50 py-10 px-8">
+  <!-- Circular Image Left -->
+  <div class="flex-shrink-0">
+    <img src="assets/images/my profile.png" alt="Profile" class="w-56 h-56 rounded-full object-cover border-4 border-gray-200 shadow-lg" />
+  </div>
+  <!-- Text Right -->
+  <div class="ml-12 max-w-xl">
+    <h2 class="text-2xl font-semibold text-teal-600 mb-1">Who I Am</h2>
+    <p class="text-gray-600 text-xl mb-4">
+      I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
     </p>
-    <!-- FAQ Items -->
-    <div class="w-full flex flex-col gap-4">
-      <div class="flex items-center border-b border-gray-500 pb-2">
-        <span class="flex-1 text-xl text-gray-400">Do you charge hourly or on spec?</span>
-        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
-      </div>
-      <div class="flex items-center border-b border-gray-500 pb-2">
-        <span class="flex-1 text-xl text-gray-400">How long have you been doing design?</span>
-        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
-      </div>
-      <div class="flex items-center border-b border-gray-500 pb-2">
-        <span class="flex-1 text-xl text-gray-400">What is the process and how long does it take?</span>
-        <img src="assets/images/add.png" alt="expand" class="w-6 h-6 opacity-60" />
-      </div>
-    </div>
+    <p class="text-gray-600 text-lg">
+      My journey in this dynamic field has been a testament to my passion for crafting meaningful user experiences, leveraging technologies, and fearlessly pushing the boundaries of digital creativity. I thrive on transforming ideas into intuitive and impactful designs.
+    </p>
   </div>
 </div>
-<!-- contact -->
- <div class="min-h-screen bg-neutral-900 flex items-center px-10" id="Contact">
-  <!-- Left side: Contact info -->
-  <div class="w-1/2 pr-10">
-    <div class="flex items-center gap-2 mb-5">
-      <div class="w-2 h-2 bg-orange-400 rounded mr-2"></div>
-      <span class="text-gray-300 text-lg">Contact Us</span>
-    </div>
-    <h2 class="text-4xl font-normal text-gray-300 mb-2">
-      Let's Talk for <span class="text-orange-400 font-medium">your</span>
-    </h2>
-    <h2 class="text-4xl font-normal text-orange-400 mb-8">Next Project</h2>
-    <!-- Contact Items -->
-    <div class="flex flex-col gap-6">
-      <div class="flex items-center gap-5">
-        <img src="assets/images/phone-call.png" alt="Phone" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
-        <span class="text-gray-300 text-lg">+923036968093</span>
+<!-- edcucatio detail -->
+ <section class="bg-gray-50 flex items-center justify-center">
+  <div class="bg-white rounded-xl shadow-xl px-8 py-10 max-w-2xl w-full">
+    <h2 class="text-3xl font-semibold text-teal-600 mb-10">My Education</h2>
+    
+    <div class="flex flex-col gap-14">
+      <!-- First Item -->
+      <div class="flex items-center justify-start gap-8">
+        <div class="flex flex-col items-end w-44">
+          <span class="text-3xl font-bold text-gray-700">2015</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="w-7 h-7 bg-teal-600 rounded-full inline-block"></span>
+          <span class="w-1 h-16 bg-teal-600 block"></span>
+        </div>
+        <div class="flex flex-col justify-start gap-2 w-full">
+          <span class="text-2xl font-bold text-teal-600">Matric</span>
+          <span class="text-xl font-semibold text-gray-700">Sahiwal Public School</span>
+        </div>
       </div>
-      <div class="flex items-center gap-5">
-        <img src="assets/images/email.png" alt="Email" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
-        <span class="text-gray-300 text-lg">engrmahmadaleem@gmail.com</span>
-      </div>
-      <div class="flex items-center gap-5">
-        <img src="assets/images/location-pin.png" alt="Location" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
-        <span class="text-gray-300 text-lg">College chowk, Fareed Town, Sahiwal</span>
-      </div>
-      <div class="flex items-center gap-5">
-        <img src="assets/images/whatsapp.png" alt="WhatsApp" class="w-12 h-12 bg-orange-400 rounded-full p-3" />
-        <span class="text-gray-300 text-lg">+923036968093</span>
+      <!-- Second Item -->
+      <div class="flex items-center justify-start gap-8">
+        <div class="flex flex-col items-end w-44">
+          <span class="text-3xl font-bold text-gray-700">2024 - Present</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="w-7 h-7 bg-teal-600 rounded-full inline-block"></span>
+          <span class="w-1 h-16 bg-teal-600 block"></span>
+        </div>
+        <div class="flex flex-col justify-start gap-2 w-full">
+          <span class="text-2xl font-bold text-teal-600">College</span>
+          <span class="text-xl font-semibold text-gray-700 leading-tight">Government College<br />Of Technology</span>
+          <span class="text-lg text-gray-700">DAE CIT</span>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Right side: Form -->
-  <div class="w-1/2 pl-10">
-    <form class="flex flex-col gap-4">
-      <div class="flex gap-4">
-        <div class="flex flex-col w-1/2">
-          <label class="text-gray-400 mb-1">Your Name</label>
-          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
-        </div>
-        <div class="flex flex-col w-1/2">
-          <label class="text-gray-400 mb-1">Email</label>
-          <input type="email" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <div class="flex flex-col w-1/2">
-          <label class="text-gray-400 mb-1">Phone Number</label>
-          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
-        </div>
-        <div class="flex flex-col w-1/2">
-          <label class="text-gray-400 mb-1">Country</label>
-          <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none" />
-        </div>
-      </div>
-      <div class="flex flex-col mb-3">
-        <label class="text-gray-400 mb-1">Budget Range</label>
-        <input type="text" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none w-1/2" />
-      </div>
-      <div class="flex flex-col">
-        <label class="text-gray-400 mb-1">Your Message Here</label>
-        <textarea rows="5" class="rounded-lg bg-gray-200/60 px-4 py-2 focus:outline-none w-full resize-none"></textarea>
-      </div>
-      <div class="pt-4">
-        <button type="submit" class="bg-orange-400 text-black rounded-full px-8 py-2 text-2xl flex items-center gap-2 font-medium">
-          Submitt
-          <span class="text-3xl">→</span>
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-<!-- footer -->
- <footer class="bg-neutral-900 py-8 px-6">
-  <!-- Top horizontal line -->
-  <div class="border-t-2 border-orange-400 mb-8"></div>
-  <div class="flex flex-row justify-between items-start gap-12">
-    <!-- Left Block: Logo, Text, Navigation -->
-    <div class="flex-1">
-      <!-- Logo image -->
-      <img src="assets/images/logo.png" alt="Ahmad Logo" class="h-16 w-auto mb-4" />
-      <p class="text-2xl text-gray-400 mb-8 max-w-xl">
-        I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
-      </p>
-      <nav class="flex gap-8 text-2xl text-gray-400 mb-1">
-    <a href="#Home" class="hover:text-yellow-500 transition">Home</a>
-    <a href="#About" class="hover:text-yellow-500 transition">About</a>
-    <a href="#F.A.Q" class="hover:text-yellow-500 transition">F.A.Q</a>
-    <a href="#Contact" class="hover:text-yellow-500 transition">Contact</a>
-      </nav>
+ </section>
+ <!-- languages and skills -->
+  <div class="flex items-center justify-center p-5">
+    <div class="flex gap-8">
+    <!-- Languages Card -->
+    <div class="relative bg-gray-200 rounded-xl shadow-md w-64 h-64 flex flex-col px-6 py-6">
+      <!-- Orange corner accent -->
+      <div class="absolute top-0 left-0 w-4/5 h-4 rounded-tl-xl rounded-tr-xl bg-orange-500 -z-10"></div>
+      <h2 class="text-2xl font-semibold text-teal-700 mb-4">Languages</h2>
+      <ul class="text-teal-900 space-y-2 pl-2">
+        <li><span class="text-teal-600">•</span> Urdu</li>
+        <li><span class="text-teal-600">•</span> English</li>
+        <li>
+          <span class="text-teal-600">•</span> Korean<br>
+          <span class="text-xs text-teal-600 pl-4">(Level 1 &amp; 2)</span>
+        </li>
+      </ul>
     </div>
-    <!-- Vertical Divider -->
-    <div class="border-l-2 border-orange-400 mx-7 h-48"></div>
-    <!-- Right Block: Newsletter -->
-    <div class="flex-1">
-      <h3 class="text-2xl text-gray-400 mb-6">Get the latest information</h3>
+
+    <!-- Skills Card -->
+    <div class="relative bg-gray-200 rounded-xl shadow-md w-64 h-64 flex flex-col px-6 py-6">
+      <!-- Orange corner accent -->
+      <div class="absolute top-0 left-0 w-4/5 h-4 rounded-tl-xl rounded-tr-xl bg-orange-500 -z-10"></div>
+      <h2 class="text-2xl font-semibold text-teal-700 mb-4">Skills</h2>
+      <ul class="text-teal-900 space-y-2 pl-2">
+        <li><span class="text-teal-600">•</span> HTML</li>
+        <li><span class="text-teal-600">•</span> CSS</li>
+        <li><span class="text-teal-600">•</span> Tailwind &amp; Bootstrap</li>
+        <li><span class="text-teal-600">•</span> Figma</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+<!-- contact form -->
+ <section class="flex items-center justify-center">
+ <div class="bg-white p-8 rounded-xl  flex gap-8">
+    <!-- LEFT: Contact Info -->
+    <div class="w-1/2">
+      <div class="mb-2 flex items-center gap-2">
+        <div class="w-4 h-4 bg-teal-700 rounded-sm"></div>
+        <span class="text-teal-600 font-medium">Contact Us</span>
+      </div>
+      <div class="mb-2">
+        <span class="text-3xl text-gray-800 font-light">Let's Talk for</span>
+        <span class="text-3xl text-teal-700 font-light ml-2">your</span>
+        <div class="text-3xl text-teal-700 font-medium mt-1">Next Project</div>
+      </div>
+      <div class="space-y-4 mt-8">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+            <img src="assets/images/phone-call.png" class="w-6 h-6" alt="Phone Icon">
+          </div>
+          <span class="text-gray-900">+923036968093</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+            <img src="assets/images/email.png" class="w-6 h-6" alt="Email Icon">
+          </div>
+          <span class="text-gray-900">engrmahmadaleem@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+            <img src="assets/images/location-pin.png" class="w-6 h-6" alt="Location Icon">
+          </div>
+          <span class="text-gray-900">College chowk, Fareed Town, Sahiwal</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+            <img src="assets/images/whatsapp.png" class="w-6 h-6" alt="WhatsApp Icon">
+          </div>
+          <span class="text-gray-900">+923036968093</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact Form -->
+    <div class="w-1/2">
       <form class="flex flex-col gap-4">
-        <div class="flex">
-          <input 
-            type="email" 
-            placeholder="Enter your Email" 
-            class="rounded-xl px-5 py-4 text-xl bg-gray-200/80 text-black outline-none"
-          />
-          <button 
-            type="submit" 
-            class="rounded-xl bg-gray-200/80 ml-3 px-5 py-4 text-xl text-black font-semibold flex items-center gap-2"
-          >
-            <span>&rarr;</span>
-          </button>
+        <div class="flex gap-4">
+          <div class="flex-1">
+            <label class="block text-gray-700 mb-1">Your Name</label>
+            <input type="text" class="w-full rounded-lg bg-gray-200 p-2 outline-none" />
+          </div>
+          <div class="flex-1">
+            <label class="block text-gray-700 mb-1">Email</label>
+            <input type="email" class="w-full rounded-lg bg-gray-200 p-2 outline-none" />
+          </div>
         </div>
+        <div class="flex gap-4">
+          <div class="flex-1">
+            <label class="block text-gray-700 mb-1">Phone Number</label>
+            <input type="text" class="w-full rounded-lg bg-gray-200 p-2 outline-none" />
+          </div>
+          <div class="flex-1">
+            <label class="block text-gray-700 mb-1">Country</label>
+            <input type="text" class="w-full rounded-lg bg-gray-200 p-2 outline-none" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-1">Budget Range</label>
+          <input type="text" class="w-full rounded-lg bg-gray-200 p-2 outline-none" />
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-1">Your Message Here</label>
+          <textarea rows="4" class="w-full rounded-lg bg-gray-200 p-2 outline-none resize-none"></textarea>
+        </div>
+        <button type="submit" class="mx-auto mt-2 bg-orange-500 text-gray-900 px-8 py-2 rounded-full text-2xl font-medium">
+          Submitt
+        </button>
       </form>
     </div>
   </div>
-  <!-- Bottom orange bar -->
-  <div class="bg-neutral-900 mt-8 py-4 px-6 flex flex-row items-center justify-between">
-    <span class="text-white text-lg font-bold">
-      Copyright &copy; 2024 Company Name. All Rights Reserved.
-    </span>
-    <div class="flex gap-8 text-white text-xl font-bold">
-      <a href="#" class="hover:text-yellow-500 transition">Terms &amp; Condition</a>
-      <a href="" class="hover:text-yellow-500 transition">Privacy Policy</a>
+  </section>
+  <!-- footer -->
+   <section class="flex flex-col justify-end">
+    <footer class="border-t-2 border-teal-400 mt-auto">
+    <div class="flex justify-between items-center px-8 py-8">
+      <!-- Left Section -->
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-1">
+          <!-- <img src="image.jpg" alt="Ahmad Logo" class="w-24 h-8 object-contain"> -->
+        </div>
+        <div class="text-gray-700 text-xl mb-2">
+          I’m M. Ahmad, a Web developer in Sahiwal. I’m very passionate about the work that I do every day.
+        </div>
+        <div class="flex items-center text-orange-600 mt-6 text-lg">
+          <span class="text-2xl mr-1">©</span> Copyright 2025
+        </div>
+      </div>
+      <!-- Vertical Line -->
+      <div class="h-36 border-l-2 border-teal-400 mx-8"></div>
+      <!-- Right Section -->
+      <div class="flex-1 flex flex-col justify-between h-full">
+        <div>
+          <div class="text-gray-800 text-xl mb-3">Get the latest information</div>
+          <div class="flex items-center">
+            <input type="email" placeholder="Enter your Email" class="rounded-lg bg-gray-200 px-6 py-3 text-base outline-none w-64 mr-2">
+            <button class="rounded-lg bg-gray-200 px-3 py-3">
+              <span class="text-2xl">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-end items-center gap-6 mt-8">
+          <a href="#" class="text-gray-800 font-semibold">Terms &amp; Condition</a>
+          <a href="#" class="text-gray-800 font-semibold">Privacy Policy</a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+   </section>
+</body>
 </html>
