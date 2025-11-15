@@ -10,7 +10,7 @@ Project Summary
 I have learned HTML, CSS, Tailwind CSS, and Figma. I can create modern, responsive websites and design user interfaces with professional tools and frameworks. My skills cover both web development and UI design, allowing me to build visually appealing and efficient digital experiences.
 
 Design Reference Files
-Figma Design (.fig file): [https://drive.google.com/file/d/1p0K6y1FdaG4MTonbUyltM9xfHq8vD4oP/view?usp=sharing]
+Figma Design (.fig file): [https://drive.google.com/file/d/1wmeJjOAbYMWLamWHqnIVvdDYq0jzFEdm/view?usp=sharing]
 Project Documentation (Google Docs): [https://docs.google.com/document/d/1IFePS0DCjH8ATd4N-bwZBfQu0GAueNR58bPEPaReBJ0/edit?usp=sharing]
 
 Technologies Used
